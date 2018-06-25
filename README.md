@@ -86,7 +86,9 @@ You can edit the array to add more or less rotational choices or edit them:
 #Adds 45 degree options
 rotateChoice = [0,45,90,135,180,225,270,315]
 ```
-
+<br />
+<br />
+<br />
 
 
 ### Shift Selection
