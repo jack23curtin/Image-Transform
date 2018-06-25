@@ -40,7 +40,7 @@ Give the example
    
    2) Move to your folder dataset
    
-   3) 3.	Execute python run
+   3) Execute python run
    
    ```
    python3 imageRead.py
