@@ -9,7 +9,7 @@ Currently built for Imagenet datasets but can easily be altered. All images shou
    - OpenCV (https://opencv.org/)
    - Folder with dataset, preferably Imagenet (www.image-net.org/)
    
-### Installing
+## Installing
 
 Get my file
 
@@ -29,7 +29,7 @@ Alter code so it works with yours
 Give the example
 ```
 
-### Running
+## Running
 
    1) Open Terminal
    
@@ -40,4 +40,20 @@ Give the example
    ```
    python3 imageRead.py
    ```
+   
+## Altering the transformations
+
+#### Probabity of the Transformation
+
+The transformations are currently set to occurr 50% probablitiy for each image
+
+```
+if random.sample(set([0, 1]), 1) == [0]:
+```
+
+However if you would like to decrease this you can add more 1s to the array:
+```
+#Gives a 1/3 chance
+if random.sample(set([0, 1, 1]), 1) == [0]:
+```
 
