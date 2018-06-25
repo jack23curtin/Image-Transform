@@ -111,3 +111,37 @@ verticleChoice = [-10,0,10]
 ```
 
 <br />
+
+### Flip Selection
+Flip Transformation means mirroring the image horizontally or vertically or both about the center line
+
+The flip transformations are randomly decided between horizontally or vertically or both
+```
+flipChoice = [1,2,3]
+```
+
+You can edit the array to lessen the flip choices or to increase the probablity a specific chioce will happen:
+```
+#50% of the time, Flip will be horizontal
+flipChoice = ["hor","hor","ver","both"]
+```
+
+<br />
+
+### Brightness and Contrast Selection
+Brightness and Contrast Transformation means either decreasing or increasing the brightness and contrast of the entire image
+Contrast value is a multiplier
+
+Brightness and Contrast choices are set as such:
+```
+flipChoice = [1,2,3]
+```
+
+You can edit the array to lessen the flip choices or to increase the probablity a specific chioce will happen:
+```
+#50% of the time, Flip will be horizontal
+flipChoice = ["hor","hor","ver","both"]
+```
+
+<br />
+
