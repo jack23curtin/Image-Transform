@@ -9,7 +9,7 @@ Currently built for Imagenet datasets but can easily be altered. All images shou
    - OpenCV (https://opencv.org/)
    - Folder with dataset, preferably Imagenet (www.image-net.org/)
    
-   
+  <br /> 
    
 ## Installing
 
@@ -31,7 +31,7 @@ Alter code so it works with yours
 Give the example
 ```
 
-
+<br />
 
 ## Running
 
@@ -45,7 +45,7 @@ Give the example
    python3 imageRead.py
    ```
    
-   
+   <br />
    
 ## Altering the transformations
 
@@ -71,7 +71,7 @@ If you would like to increase the probablility, you can add more 0s to the array
 if random.sample(set([0, 1, 0,]), 1) == [0]:
 ```
 
-
+<br />
 
 ### Rotation Selection
 Rotation Transformation means rotating the image about the center a set number of degrees
@@ -86,8 +86,7 @@ You can edit the array to add more or less rotational choices or edit them:
 #Adds 45 degree options
 rotateChoice = [0,45,90,135,180,225,270,315]
 ```
-<br />
-<br />
+
 <br />
 
 
@@ -109,3 +108,4 @@ horizontalChoice = [-10,0,10]
 verticleChoice = [-10,0,10]
 ```
 
+<br />
