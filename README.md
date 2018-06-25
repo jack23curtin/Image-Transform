@@ -131,16 +131,21 @@ flipChoice = ["hor","hor","ver","both"]
 ### Brightness and Contrast Selection
 Brightness and Contrast Transformation means either decreasing or increasing the brightness and contrast of the entire image
 Contrast value is a multiplier
+Brightness is an additive
+
+NOTE: Adjusting the image brightness and contrast too much will result in completely white or completely black photos as well as a poor dataset
 
 Brightness and Contrast choices are set as such:
 ```
-flipChoice = [1,2,3]
+contrastChoice = [.2, .5, .7, 1, 1.3, 1.5, 1.7, 2]
+brightnessChoice = [-50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50]
 ```
 
-You can edit the array to lessen the flip choices or to increase the probablity a specific chioce will happen:
+You can edit the array to add more or less brightness and contrast choices or edit them:
 ```
-#50% of the time, Flip will be horizontal
-flipChoice = ["hor","hor","ver","both"]
+#Lessoned the number of choices
+contrastChoice = [.5, .7, 1, 1.3, 1.5]
+brightnessChoice = [-20, -10, 0, 10, 20]
 ```
 
 <br />
