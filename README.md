@@ -46,14 +46,21 @@ Give the example
 #### Probabity of the Transformation
 
 The transformations are currently set to occurr 50% probablitiy for each image
-
 ```
+#Gives a 1/2 chance
 if random.sample(set([0, 1]), 1) == [0]:
 ```
 
-However if you would like to decrease this you can add more 1s to the array:
+If you would like to decrease the probablility, you can add more 1s to the array:
 ```
 #Gives a 1/3 chance
 if random.sample(set([0, 1, 1]), 1) == [0]:
 ```
+
+If you would like to increase the probablility, you can add more 0s to the array:
+```
+#Gives a 2/3 chance
+if random.sample(set([0, 1, 0,]), 1) == [0]:
+```
+
 
