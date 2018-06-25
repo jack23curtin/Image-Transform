@@ -44,6 +44,7 @@ Give the example
 ## Altering the transformations
 
 ### Probabity of the Transformation
+The probabity of the Transformation means how likely the Transformation will occur for each image
 
 The transformations are currently set to occurr 50% probablitiy for each image
 ```
@@ -63,4 +64,35 @@ If you would like to increase the probablility, you can add more 0s to the array
 if random.sample(set([0, 1, 0,]), 1) == [0]:
 ```
 
+### Rotation Selection
+Rotation Transformation means rotating the image about the center a set number of degrees
+
+The rotation transformations are set to rotate the image by 0, 90, 180, or 270 degrees
+```
+rotateChoice = [0,90,180,270]
+```
+
+You can edit the array to add more or less rotational choices or edit them:
+```
+#Adds 45 degree options
+rotateChoice = [0,45,90,135,180,225,270,315]
+```
+
+### Shift Selection
+Shift Transformation means shifting the image horizontally or vertically a set number of pixels
+
+NOTE: Shifting the image adds black area to the part of the image that was shifted. Do not add much to the shift choices because that will shift the object out of the frame.
+
+The shift transformations are set to shift the image horizontally and vertically by -15, -5, 0, 5, or 15 pixels
+```
+horizontalChoice = [-15,-5,0,5,15]
+verticleChoice = [-15,-5,0,5,15]
+```
+
+You can edit the array to add more or less shift choices or edit them:
+```
+#Limits shift to 10 pixels
+horizontalChoice = [-10,0,10]
+verticleChoice = [-10,0,10]
+```
 
