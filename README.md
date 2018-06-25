@@ -1,11 +1,11 @@
 # Image-Transform
 A short program to artificially increase dataset size. 
 
-This code is not built for large datasets, but rather for anyone who wants to begin exploring Deep Learning and datasets in general. It is written in Python and uses modules cv2, numpy, random, and glob. The program reads in all the images in a folder, then randomly transform it 1 - 5 different ways: Rotate, Shift, Flip, Brightness, and Contrast. I wrote this program to be easily changed to increase the probablility of the image to be transformed. 
+This code is not built for large datasets, but rather for anyone who wants to begin exploring Deep Learning and datasets in general. It is written in Python and uses modules cv2, numpy, random, and glob. The program reads in all the images in a folder, then randomly transform it 1 - 5 different ways: Rotate, Shift, Flip, Brightness, and Contrast. I wrote this program to be easily changed to increase the probability of the image to be transformed. 
 
 Currently built for Imagenet datasets but can easily be altered. All images should be quickly re-checked with a human eye to make sure transformation is not too much. 
 
-### Prerequsits 
+### Prerequisites 
    - OpenCV (https://opencv.org/)
    - Folder with dataset, preferably Imagenet (www.image-net.org/)
    
@@ -40,7 +40,7 @@ Give the example
    
    2) Move to your folder dataset
    
-   3) Excute python run
+   3) 3.	Execute python run
    
    ```
    python3 imageRead.py
@@ -52,22 +52,22 @@ Give the example
 ## Altering the transformations
 
 
-### Probabity of the Transformation
-The probabity of the Transformation means how likely the Transformation will occur for each image
+### Probability  of the Transformation
+The probability of the Transformation means how likely the Transformation will occur for each image
 
-The transformations are currently set to occurr 50% probablitiy for each image
+The transformations are currently set to occurr 50% probability for each image
 ```
 #Gives a 1/2 chance
 if random.sample(set([0, 1]), 1) == [0]:
 ```
 
-If you would like to decrease the probablility, you can add more 1s to the array:
+If you would like to decrease the probability, you can add more 1s to the array:
 ```
 #Gives a 1/3 chance
 if random.sample(set([0, 1, 1]), 1) == [0]:
 ```
 
-If you would like to increase the probablility, you can add more 0s to the array:
+If you would like to increase the probability, you can add more 0s to the array:
 ```
 #Gives a 2/3 chance
 if random.sample(set([0, 1, 0,]), 1) == [0]:
@@ -120,7 +120,7 @@ The flip transformations are randomly decided between horizontally or vertically
 flipChoice = [1,2,3]
 ```
 
-You can edit the array to lessen the flip choices or to increase the probablity a specific chioce will happen:
+You can edit the array to lessen the flip choices or to increase the probability a specific choice will happen:
 ```
 #50% of the time, Flip will be horizontal
 flipChoice = ["hor","hor","ver","both"]
