@@ -9,6 +9,8 @@ Currently built for Imagenet datasets but can easily be altered. All images shou
    - OpenCV (https://opencv.org/)
    - Folder with dataset, preferably Imagenet (www.image-net.org/)
    
+   
+   
 ## Installing
 
 Get my file
@@ -29,6 +31,8 @@ Alter code so it works with yours
 Give the example
 ```
 
+
+
 ## Running
 
    1) Open Terminal
@@ -41,7 +45,10 @@ Give the example
    python3 imageRead.py
    ```
    
+   
+   
 ## Altering the transformations
+
 
 ### Probabity of the Transformation
 The probabity of the Transformation means how likely the Transformation will occur for each image
@@ -64,6 +71,8 @@ If you would like to increase the probablility, you can add more 0s to the array
 if random.sample(set([0, 1, 0,]), 1) == [0]:
 ```
 
+
+
 ### Rotation Selection
 Rotation Transformation means rotating the image about the center a set number of degrees
 
@@ -77,6 +86,8 @@ You can edit the array to add more or less rotational choices or edit them:
 #Adds 45 degree options
 rotateChoice = [0,45,90,135,180,225,270,315]
 ```
+
+
 
 ### Shift Selection
 Shift Transformation means shifting the image horizontally or vertically a set number of pixels
