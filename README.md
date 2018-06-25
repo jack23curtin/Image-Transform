@@ -10,6 +10,7 @@ Currently built for Imagenet datasets but can easily be altered. All images shou
    - Folder with dataset, preferably Imagenet (www.image-net.org/)
    
   <br /> 
+  <br />
    
 ## Installing
 
@@ -45,6 +46,7 @@ Give the example
    python3 imageRead.py
    ```
    
+   <br />
    <br />
    
 ## Altering the transformations
