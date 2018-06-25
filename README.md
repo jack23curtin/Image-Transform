@@ -43,7 +43,7 @@ Give the example
    
 ## Altering the transformations
 
-#### Probabity of the Transformation
+### Probabity of the Transformation
 
 The transformations are currently set to occurr 50% probablitiy for each image
 ```
