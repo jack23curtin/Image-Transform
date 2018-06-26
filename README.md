@@ -14,23 +14,22 @@ Currently built for Imagenet datasets but can easily be altered. All transformed
    
 ## Installing
 
-Get my file
+1. Fork and download this repository 
+
+2. Move my imageTransform.py into the folder with your dataset in it
+
+3. Check to see what your dataset image extention is and change the code accordingly. Currently it is (.JPEG)
 
 ```
-github git
+for filename in glob.glob('*.JPEG'):
+
+#Near the bottom
+newFile = x[0] + "_NEW-" + str(i) + ".JPEG"
+
+newFile = x[0] + "_NEW-" + str(i) + ".JPEG"
 ```
 
-Move my file into the folder with your dataset in it
-
-```
-move
-```
-
-Alter code so it works with yours
-
-```
-Give the example
-```
+4. Alter code so you get the desired transformations
 
 <br />
 
@@ -43,7 +42,7 @@ Give the example
    3) Execute python run
    
    ```
-   python3 imageRead.py
+   python3 imageTransform.py
    ```
    
    <br />
