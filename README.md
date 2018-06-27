@@ -66,7 +66,7 @@ If you would like to decrease the probability, you can add more numbers other th
 if random.sample(set([0, 1, 2]), 1) == [0]:
 ```
 
-If you would like to increase the probability,you can add more numbers other than 1 to the array and change it to not:
+If you would like to increase the probability,you can add more numbers other than 1 to the array and change the expression to not:
 ```
 #Gives a 2/3 chance
 if random.sample(set([0, 1, 2,]), 1) != [0]:
