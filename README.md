@@ -39,7 +39,7 @@ newFile = x[0] + "_NEW-" + str(i) + ".JPEG"
    
    2) Move to your folder dataset
    
-   3) Execute python run
+   3) Run file
    
    ```
    python3 imageTransform.py
